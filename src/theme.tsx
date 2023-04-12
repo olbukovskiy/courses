@@ -1,20 +1,26 @@
 export const theme = Object.freeze({
   colors: {
-    mainText: "#757575",
+    primary: "#757575",
     secondary: "#212121",
-    accent: "#2196F3",
+    background: "#f5f4fa",
+    hover: "#2196f3",
+    disabled: "#b4b4b4",
+    black: "rgba(0, 0, 0, 0.87)",
     white: "#ffffff",
-    gray: "#9e9e9e",
-    light: "#f2f2f2",
-    dark: "#212121",
-    mainBackground: "#f5f4fa",
-    tagBackground: ["linear-gradient(to bottom, #FFD194, #D1913C)"],
+    error: "#cb3d40",
+    inputBorder: "#d0cfcf",
+    placeholder: "#7e7e7e",
+    blue: "#2196f3",
+    darkBlue: "#188ce8",
+    heroBg: `#c4c4c4`,
   },
   fontSizes: {
-    small: "14px",
-    medium: "18px",
-    large: "22px",
+    small: "12px",
+    medium: "16px",
+    large: "24px",
+    xl: "40px",
   },
+  fontWeigths: { normal: 400, bold: 700 },
   spacing: (value: number) => `${4 * value}px`,
   shadows: {
     small: "0 5px 7px -1px rgba(51, 51, 51, 0.23)",
@@ -25,3 +31,5 @@ export const theme = Object.freeze({
     cubicBezier: "0.25s cubic-bezier(0.7, 0.98, 0.86, 0.98)",
   },
 });
+
+export type ThemeType = typeof theme;

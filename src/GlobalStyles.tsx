@@ -1,19 +1,27 @@
 import { css } from "@emotion/react";
-import { theme } from "./theme";
 
 export const GlobalStyles = css`
   html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    height: 100%;
   }
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-      "Helvetica Neue", sans-serif;
-    background: ${theme.colors.mainBackground};
+    font-family: "Nunito", sans-serif;
+    font-size: 12px;
+    background: #efefef;
 
     font-style: normal;
+    height: 100%;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    }
   }
 
   h1,
@@ -59,6 +67,10 @@ export const GlobalStyles = css`
   }
 
   #root {
+    display: flex;
+    flex-direction: column;
+
     width: 100%;
+    height: 100%;
   }
 `;

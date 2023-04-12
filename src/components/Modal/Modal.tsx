@@ -67,4 +67,5 @@ const Modal: React.FunctionComponent<Props> = ({ children, onClose }) => {
     modalRoot
   );
 };
+
 export default Modal;
