@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.js": "/courses/static/js/main.12110b75.js",
+    "static/js/784.46861bae.chunk.js": "/courses/static/js/784.46861bae.chunk.js",
+    "static/js/19.4814785b.chunk.js": "/courses/static/js/19.4814785b.chunk.js",
+    "static/js/296.5c9dccbe.chunk.js": "/courses/static/js/296.5c9dccbe.chunk.js",
+    "static/js/758.f6cd7a15.chunk.js": "/courses/static/js/758.f6cd7a15.chunk.js",
+    "static/js/434.3ba422db.chunk.js": "/courses/static/js/434.3ba422db.chunk.js",
+    "static/js/790.8de397a9.chunk.js": "/courses/static/js/790.8de397a9.chunk.js",
+    "static/js/166.b4e87292.chunk.js": "/courses/static/js/166.b4e87292.chunk.js",
+    "static/js/122.742b9465.chunk.js": "/courses/static/js/122.742b9465.chunk.js",
+    "static/media/background.jpg": "/courses/static/media/background.02ea0eb6c4cb3e11193c.jpg",
+    "static/media/icons.svg": "/courses/static/media/icons.cffb96bf993b291fbcc1c3bd090dcf95.svg",
+    "index.html": "/courses/index.html",
+    "main.12110b75.js.map": "/courses/static/js/main.12110b75.js.map",
+    "784.46861bae.chunk.js.map": "/courses/static/js/784.46861bae.chunk.js.map",
+    "19.4814785b.chunk.js.map": "/courses/static/js/19.4814785b.chunk.js.map",
+    "296.5c9dccbe.chunk.js.map": "/courses/static/js/296.5c9dccbe.chunk.js.map",
+    "758.f6cd7a15.chunk.js.map": "/courses/static/js/758.f6cd7a15.chunk.js.map",
+    "434.3ba422db.chunk.js.map": "/courses/static/js/434.3ba422db.chunk.js.map",
+    "790.8de397a9.chunk.js.map": "/courses/static/js/790.8de397a9.chunk.js.map",
+    "166.b4e87292.chunk.js.map": "/courses/static/js/166.b4e87292.chunk.js.map",
+    "122.742b9465.chunk.js.map": "/courses/static/js/122.742b9465.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.12110b75.js"
+  ]
+}
