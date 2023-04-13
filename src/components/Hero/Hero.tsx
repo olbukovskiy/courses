@@ -34,7 +34,6 @@ const HeroSection = () => {
     <Hero>
       <Container>
         <HeroThumb>
-          {" "}
           <HeroHeading>Welcome to EduSite</HeroHeading>
           <HeroButton onClick={toggleModal}>Order a service</HeroButton>
           {isOpen && (

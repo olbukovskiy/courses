@@ -6,6 +6,8 @@ export const Menu = styled.div<Props>`
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000000;
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
 
@@ -18,10 +20,12 @@ export const Menu = styled.div<Props>`
 
 export const Blur = styled.div`
   position: absolute;
-  left: 30%;
+  left: 32%;
   width: 100%;
   height: 100vh;
   backdrop-filter: blur(2px);
+  z-index: 1000000;
+  overflow: hidden;
 `;
 
 export const MenuList = styled.ul`
@@ -30,6 +34,8 @@ export const MenuList = styled.ul`
   justify-content: flex-start;
   align-items: flex-start;
   gap: 16px;
+
+  overflow: hidden;
 `;
 
 export const MenuContent = styled.div<Props>`
@@ -42,7 +48,7 @@ export const MenuContent = styled.div<Props>`
 
   width: 30%;
   height: 100%;
-  background-color: ${(props) => props.theme.colors.white};
+  background-color: #e5e5e5;
 `;
 
 export const MenuHeading = styled.h2<Props>`

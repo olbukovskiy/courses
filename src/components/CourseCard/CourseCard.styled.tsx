@@ -1,13 +1,16 @@
 import styled from "@emotion/styled";
 import { Props } from "../../types";
 
-export const Card = styled.li`
+export const Card = styled.li<Props>`
   height: 100%;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid #eaeaea;
+  background-color: #fff;
+  cursor: pointer;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: ${(props) => props.theme.shadows.small};
 
   &:hover {
     transform: scale(1.03);
@@ -32,6 +35,7 @@ export const PictureThumb = styled.div`
     top: 0;
     left: 0;
     object-fit: cover;
+    z-index: 1;
   }
 `;
 

@@ -14,3 +14,12 @@ export interface ILinkItem {
   href: string;
   icon: string;
 }
+
+export interface ICourseCard {
+  searchQuery?: string;
+  src: string;
+  title: string;
+  descr: string;
+  difficulty: string;
+  direction: string;
+}

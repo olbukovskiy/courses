@@ -1,52 +1,34 @@
 import styled from "@emotion/styled";
-import { Form, Field } from "formik";
 import { GoSearch } from "react-icons/go";
 
-export const SearchIcon = styled(GoSearch)`
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-`;
-
-export const SearchbarContainer = styled.header`
-  top: 0;
-  left: 0;
-  position: sticky;
-  z-index: 1100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 64px;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  color: #fff;
-  background-color: #3f51b5;
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-`;
-
-export const SearchForm = styled(Form)`
+export const SearchForm = styled.form`
   display: flex;
   align-items: center;
+  gap: 10px;
   width: 100%;
-  max-width: 600px;
   background-color: #fff;
-  border-radius: 3px;
+
   overflow: hidden;
 `;
 
-export const SearchFormButton = styled.button`
+export const SearchFormThumb = styled.div`
+  display: flex;
+
+  height: 48px;
+  width: 100%;
+  border: 2px solid #e5e5e5;
+  border-radius: 5px;
+`;
+
+export const SearchFormButton = styled.div`
   position: relative;
   display: inline-block;
   width: 48px;
   height: 48px;
-  border: 0;
+  cursor: default;
+
   opacity: 0.6;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
   outline: none;
 
   &:hover {
@@ -66,18 +48,51 @@ export const SearchFormButtonLabel = styled.span`
   border: 0;
 `;
 
-export const SearchFormInput = styled(Field)`
+export const SearchFormInput = styled.input`
   display: inline-block;
   width: 100%;
+  height: 100%;
   font: inherit;
   font-size: 20px;
-  border: none;
-  outline: none;
+  border-color: transparent;
+
   padding-left: 4px;
   padding-right: 4px;
+
+  &:focus {
+    border-color: transparent;
+  }
 
   &::placeholder {
     font: inherit;
     font-size: 18px;
   }
+`;
+
+export const SearchFormSelect = styled.select`
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font: inherit;
+  font-size: 20px;
+  border-color: transparent;
+
+  padding-left: 4px;
+  padding-right: 4px;
+
+  &:focus {
+    border-color: transparent;
+  }
+
+  &::placeholder {
+    font: inherit;
+    font-size: 18px;
+  }
+`;
+
+export const SearchIcon = styled(GoSearch)`
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 `;

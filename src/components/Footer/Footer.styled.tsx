@@ -13,12 +13,15 @@ export const FooterText = styled.p<Props>`
   align-self: center;
   margin: 0 auto;
   color: ${(props) => props.theme.colors.white};
-  font-size: 1.5rem;
+  font-size: 1rem;
 `;
 
 export const FooterThumb = styled.div`
   display: flex;
-  gap: 36px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 `;
 
 export const SocialThumb = styled.div`

@@ -1,3 +1,5 @@
+import React from "react";
+import { ICourseCard } from "../../types";
 import {
   Card,
   CardBox,
@@ -6,28 +8,27 @@ import {
   CardTitle,
   PictureThumb,
 } from "./CourseCard.styled";
+import { highlightSearchResults } from "../../helpers";
 
-type Props = {
-  src: string;
-  alt: string;
-  title: string;
-  descr: string;
+export type SearchProp = {
+  searchQuery?: string;
 };
 
-const CourseCard: React.FunctionComponent<Props> = ({
+const CourseCard: React.FunctionComponent<ICourseCard> = ({
   src,
-  alt,
+  searchQuery,
   title,
   descr,
 }) => {
+  const highlightedTitle = highlightSearchResults(searchQuery as string, title);
   return (
     <Card>
       <CardLink>
         <PictureThumb>
-          <img src={src} alt={alt} />
+          <img src={src} alt={title} />
         </PictureThumb>
         <CardBox>
-          <CardTitle>{title}</CardTitle>
+          <CardTitle>{highlightedTitle}</CardTitle>
           <CardDescription>{descr}</CardDescription>
         </CardBox>
       </CardLink>
@@ -35,4 +36,4 @@ const CourseCard: React.FunctionComponent<Props> = ({
   );
 };
 
-export default CourseCard;
+export default React.memo(CourseCard);

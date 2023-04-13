@@ -10,7 +10,7 @@ export const GlobalStyles = css`
   body {
     font-family: "Nunito", sans-serif;
     font-size: 12px;
-    background: #efefef;
+    background: #fff;
 
     font-style: normal;
     height: 100%;

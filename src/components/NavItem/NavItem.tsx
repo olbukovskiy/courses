@@ -20,4 +20,4 @@ const NavItem: React.FunctionComponent<INavItem & propType> = ({
   );
 };
 
-export default NavItem;
+export default React.memo(NavItem);

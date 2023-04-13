@@ -1,3 +1,4 @@
+import React from "react";
 import { ILinkItem } from "../../types";
 import {
   SocialLinkIcon,
@@ -17,4 +18,4 @@ const LinkItem: React.FunctionComponent<ILinkItem> = ({ href, icon }) => {
   );
 };
 
-export default LinkItem;
+export default React.memo(LinkItem);

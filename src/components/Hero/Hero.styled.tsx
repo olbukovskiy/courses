@@ -12,6 +12,7 @@ export const Hero = styled.section<Props>`
   margin: 0 auto;
   width: 100%;
   height: 100%;
+  background-size: 100% 100%;
 
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
